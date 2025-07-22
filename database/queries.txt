@@ -1,0 +1,42 @@
+create database product_level;
+
+
+create table eligibility(
+eligibility_datetime_utc DATETIME ,
+item_id INTEGER ,
+eligibility varchar(6),
+message TEXT
+);
+
+
+
+create table ad_sales(
+
+date DATE ,
+
+item_id INTEGER,
+
+ad_sales DECIMAL(10,2) ,
+
+impressions INTEGER ,
+
+ad_spend DECIMAL(10,2) ,
+
+clicks INTEGER ,
+
+units_sold INTEGER
+);
+
+
+
+
+create table total_sales(
+date DATE ,
+
+item_id INTEGER,
+
+total_sales DECIMAL(10,2) ,
+
+total_units_ordered INTEGER
+
+);
